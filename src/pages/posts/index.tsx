@@ -5,7 +5,7 @@ import { RichText } from 'prismic-dom';
 import { getPrismicClient } from '../../services/prismic';
 import styles from './styles.module.scss';
 
-interface IPost{
+type Post = {
   slug: string;
   title: string;
   excerpt: string;
@@ -13,7 +13,7 @@ interface IPost{
 }
 
 interface IPostsProps{
-  posts: IPost[] 
+  posts: Post[] 
 }
 export default function Posts({ posts }: IPostsProps){
   return (
@@ -60,7 +60,7 @@ export const getStaticProps: GetStaticProps = async () => {
     }
   });
   //console.log(response);
-  console.log(JSON.stringify(response,null,2))
+  //console.log(JSON.stringify(response,null,2))
   return {
     props: { posts }
   }
