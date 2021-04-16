@@ -1,5 +1,5 @@
 # Ignews 
-O projeto foi desenvolvida em NextJS e com Typescript durante as aulas do Ignite (bootcamp da Rocketseat, na trilha de ReactJS);
+O projeto foi desenvolvido em NextJS e com Typescript durante as aulas do Ignite (bootcamp da Rocketseat, na trilha de ReactJS);
 
 Foram 45 aulas dividas em 3 módulos (Fundamentos do Next.js, Back-end no Front-end, Front-end JAMStack)  
 
