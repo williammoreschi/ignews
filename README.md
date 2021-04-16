@@ -8,6 +8,8 @@ Foram 45 aulas dividas em 3 módulos (Fundamentos do Next.js, Back-end no Front-
 ### Conhecimentos agregados
 A cada aula um novo conhecimento agregado.
 
+### Conhecimentos agregados
+A cada aula um novo conhecimento agregado.
 - [x] SSR - Server Side Render
 - [x] SSG - Static Site Generator
 - [x] SASS
