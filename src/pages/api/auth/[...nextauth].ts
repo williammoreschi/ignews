@@ -13,6 +13,12 @@ export default NextAuth({
       scope:'read:user'
     }),
   ],
+  jwt: {
+    secret: process.env.NEXTAUTH_SECRET_JWT,
+    encryption: true,
+    signingKey: `{"kty":"oct","kid":"${process.env.NEXTAUTH_SIGNINGKEY_KID}","alg":"HS512","k":"${process.env.NEXTAUTH_SIGNINGKEY_K}"}`,
+    encryptionKey: `{"kty":"oct","kid":"${process.env.NEXTAUTH_ENCRYPTIONKEY_KID}","alg":"A256GCM","k":"${process.env.NEXTAUTH_ENCRYPTIONKEY_K}"}`,
+  },
   callbacks: {
     async session(session) {
       try {
